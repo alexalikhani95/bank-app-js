@@ -7,4 +7,9 @@ class Bank  {
     this.balance += amount
     return this.balance
   }
+
+  withdraw(amount) {
+    this.balance -= amount
+    return this.balance
+  }
  }
