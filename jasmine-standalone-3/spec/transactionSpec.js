@@ -1,5 +1,5 @@
 describe('Transaction', function () {
-  let account;
+  let tran
 
   beforeEach(function () {
     tran = new Transaction(new Date(2019, 11, 10), 100.00, 0.00)
