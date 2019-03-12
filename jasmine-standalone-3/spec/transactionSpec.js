@@ -2,7 +2,7 @@ describe('Transaction', function () {
   let account;
 
   beforeEach(function () {
-    tran = new Transaction(new Date(2019, 11, 10), 100)
+    tran = new Transaction(new Date(2019, 11, 10), 100.00, 0.00)
   })
 
   it('should be initialised with a date', function () {
@@ -11,6 +11,10 @@ describe('Transaction', function () {
   })
 
   it('should show the amount of a transaction', function () {
-    expect(tran.amount).toEqual(100)
+    expect(tran.amount).toEqual(100.00)
+  })
+
+  it('should have the balance', function () {
+    expect(tran.balance).toEqual(0.00)
   })
 })
